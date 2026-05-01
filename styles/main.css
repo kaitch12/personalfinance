@@ -90,7 +90,7 @@ nav a:focus {
 }
 
 .hero img {
-    max-width: 300px;
+    max-height: 300px;
 }
 
 /* Steps Section----------------------------------------- */
@@ -104,7 +104,7 @@ nav a:focus {
 #step2,
 #step3 {
     background-color: white;
-    max-width: 30%;
+    width: 30%;
     margin: 1em;
     padding: 2em;
     border-radius: 16px;
@@ -117,7 +117,8 @@ nav a:focus {
     font-size: 150%;
 }
 
-.steps p {
+.steps p,
+.steps li {
     font-size: 120%;
 }
 
@@ -148,4 +149,27 @@ footer {
     padding: 4em;
     align-items: center;
     justify-content: center;
+}
+
+
+/* Media Queries---------------------------------------------*/
+@media (max-width: 767px) {
+    .hero img {
+        max-height: 200px;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    #step1,
+    #step2,
+    #step3 {
+        width: 100%;
+    }
+    .screens img {
+    max-width: 150px;
+}
+
+
 }
