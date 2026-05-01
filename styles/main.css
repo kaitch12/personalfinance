@@ -4,11 +4,20 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #eff5fc;
+    font-family: "League Spartan",
+        sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Header + Nav Menu----------------------------------------- */
 header img {
-    width: 150px;
+    width: 75px;
     padding: 0.5em;
     background-color: #eff5fc;
-    border-radius: 36px;
+    border-radius: 16px;
     margin-right: 2em;
 }
 
@@ -16,16 +25,22 @@ header {
     display: flex;
     background-color: #2e75b5;
     color: white;
-    padding: 2em;
+    padding: 1em 2em;
+    margin: 1em;
     border-radius: 16px;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 1em;
+    z-index: 999;
 }
+
 
 .logotitle {
     display: flex;
     flex-direction: row;
-    align-items: center;}
+    align-items: center;
+}
 
 nav {
     color: #eff5fc;
@@ -55,17 +70,82 @@ nav a:focus {
     border-radius: 16px;
 }
 
-
-body {
-    background-color: #eff5fc;
-    padding: 1em;
-    font-family: "League Spartan",
-        sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+/* Hero Section----------------------------------------- */
+.hero {
+    display: flex;
+    padding: 8em 4em;
+    justify-content: space-between;
+    align-items: center;
 }
 
-main {
-    padding: 1em;
+.hero h2 {
+    font-size: 300%;
+    font-weight: 600;
+}
+
+.hero h3 {
+    font-size: 150%;
+    font-weight: 400;
+    max-width: 80%;
+}
+
+.hero img {
+    max-width: 300px;
+}
+
+/* Steps Section----------------------------------------- */
+.steps {
+    display: flex;
+    padding: 8em 4em;
+    background-color: #8ab7e0;
+}
+
+#step1,
+#step2,
+#step3 {
+    background-color: white;
+    max-width: 30%;
     margin: 1em;
+    padding: 2em;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps h3 {
+    padding-bottom: 10px;
+    font-size: 150%;
+}
+
+.steps p {
+    font-size: 120%;
+}
+
+
+/* Screens Section----------------------------------------- */
+.screens img {
+    max-width: 300px;
+}
+
+.screens h2 {
+    padding-bottom: 2em;
+    font-size: 250%;
+}
+
+.screens {
+    display: flex;
+    flex-direction: column;
+    padding: 8em 4em;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer Section----------------------------------------- */
+footer {
+    display: flex;
+    background-color: #1f4e71;
+    color: #eff5fc;
+    padding: 4em;
+    align-items: center;
+    justify-content: center;
 }
